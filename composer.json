@@ -10,7 +10,6 @@
             "email": "sv@webmechanica.ru"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
       "php": ">=5.5.9",
       "illuminate/support": "5.4.*|5.5.*|5.6.*"
