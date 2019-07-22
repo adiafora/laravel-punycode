@@ -1,6 +1,6 @@
 {
     "name": "adiafora/laravel-punycode",
-    "description": "Package for decoding domains шт punycode for Laravel 5",
+    "description": "Package for decoding domains in punycode for Laravel 5",
     "type": "library",
     "license": "MIT",
     "authors": [
