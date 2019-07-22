@@ -1,0 +1,29 @@
+{
+    "name": "adiafora/laravel-punycode",
+    "description": "Package for decoding domains шт punycode for Laravel 5",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Zhidkov",
+            "email": "sv@webmechanica.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+	"version": "1.0.0",
+	"autoload": {
+		"classmap": [],
+		"files": [],
+		"psr-4": {
+			"Adiafora\\Punycode\\": "src"
+		}
+	},
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Adiafora\\Punycode\\PunycodeServiceProvider"
+        ]
+      }
+    }
+}
