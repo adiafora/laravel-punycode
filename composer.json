@@ -1,37 +1,37 @@
 {
-    "name": "adiafora/laravel-punycode",
-    "description": "Package for decoding domains in punycode for Laravel 5",
-    "keywords": ["laravel", "punycode", "idn", "domain"],
-    "type": "package",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Sergey Zhidkov",
-            "email": "zhidkoff@list.ru"
-        }
+  "name": "adiafora/laravel-punycode",
+  "description": "Package for decoding domains in punycode for Laravel 5",
+  "keywords": ["laravel", "punycode", "idn", "domain"],
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Zhidkov",
+      "email": "zhidkoff@list.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.4.*|5.5.*|5.6.*"
+  },
+  "version": "1.2",
+  "autoload": {
+    "classmap": [],
+    "files": [
+      "src/helpers.php"
     ],
-    "require": {
-      "php": ">=5.5.9",
-      "illuminate/support": "5.4.*|5.5.*|5.6.*"
-    },
-	"version": "1.2",
-	"autoload": {
-		"classmap": [],
-		"files": [
-          "src/helpers.php"
-        ],
-		"psr-4": {
-			"Adiafora\\Punycode\\": "src"
-		}
-	},
-    "extra": {
-      "laravel": {
-        "providers": [
-          "Adiafora\\Punycode\\PunycodeServiceProvider"
-        ],
-        "aliases": {
-          "Punycode": "Adiafora\\Punycode\\Facades\\Punycode"
-        }
+    "psr-4": {
+      "Adiafora\\Punycode\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Adiafora\\Punycode\\PunycodeServiceProvider"
+      ],
+      "aliases": {
+        "Punycode": "Adiafora\\Punycode\\Facades\\Punycode"
       }
     }
+  }
 }

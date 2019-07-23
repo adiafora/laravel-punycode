@@ -13,7 +13,7 @@ class PunycodeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        $this->registerHelpers();
+        //
     }
 
     /**
@@ -26,12 +26,5 @@ class PunycodeServiceProvider extends ServiceProvider
         $this->app->singleton('punycode', function () {
             return new Punycode();
         });
-    }
-
-    public function registerHelpers()
-    {
-        if (file_exists($file = __DIR__.'/helpers.php')) {
-            require $file;
-        }
     }
 }
