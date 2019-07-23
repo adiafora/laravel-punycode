@@ -3,7 +3,9 @@ Laravel Punycode
 
 This package converts a Unicode encoded domain name to a IDNA ASCII form and vice-versa.
 
-This package is based on another package - fomvasss/laravel-punycode. But the idna_convert class is taken as the main class. It allows you to use a domain in any writing: only domain, domain with www, Protocol, script, parameters, and so on. If You accidentally encoded an English domain in punycode, then nothing will happen to it, no errors and unexpected results. You can safely use this package on all domains, it will do everything for You.
+This package is based on another package - fomvasss/laravel-punycode. But the idna_convert class is taken as the main class. And it allows you to use a domain in any writing: only domain, domain with www, Protocol, script, parameters, and so on. 
+
+If You accidentally encoded an English domain in punycode, then nothing will happen to it, no errors and unexpected results. You can safely use this package on all domains, it will do everything for You.
 
 ### Install
 Run:
@@ -17,7 +19,12 @@ For Laravel < 5.5 Add in ServiceProvider to the providers array in config/app.ph
 
 ### Usage
 Usage facade
-You can now using the Facade.
+You can now using the Facade by default.
+
+For Laravel < 5.5 Add in Facade to the aliases array in config/app.php
+```php
+    'Punycode' => Adiafora\Punycode\Facades\Punycode::class,
+```
 
 Example usage:
 
