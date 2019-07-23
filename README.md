@@ -8,11 +8,11 @@ This package is based on another package - fomvasss/laravel-punycode. But the id
 ### Install
 Run:
 ```php
-composer require "adiafora/laravel-punycode"
+    composer require "adiafora/laravel-punycode"
 ```
 For Laravel < 5.5 Add in ServiceProvider to the providers array in config/app.php
 ```php
-  Adiafora\Punycode\PunycodeServiceProvider::class,
+    Adiafora\Punycode\PunycodeServiceProvider::class,
 ```
 
 ### Usage
@@ -22,17 +22,17 @@ You can now using the Facade.
 Example usage:
 
 ```php
-var_dump(Punycode::encode('мой-веб-сайт.сайт'));
-// outputs: xn-----8kcceszgtu3bo.xn--80aswg
+    var_dump(Punycode::encode('мой-веб-сайт.сайт'));
+    // outputs: xn-----8kcceszgtu3bo.xn--80aswg
 
-var_dump(Punycode::decode('xn-----8kcceszgtu3bo.xn--80aswg'));
-// outputs: мой-веб-сайт.сайт
+    var_dump(Punycode::decode('xn-----8kcceszgtu3bo.xn--80aswg'));
+    // outputs: мой-веб-сайт.сайт
 ```
 Usage helper functions
 
 ```php
-punycode_encode('мой-веб-сайт.сайт');
-punycode_decode('xn-----8kcceszgtu3bo.xn--80aswg');
+    punycode_encode('мой-веб-сайт.сайт');
+    punycode_decode('xn-----8kcceszgtu3bo.xn--80aswg');
 ```
 
 ### License
