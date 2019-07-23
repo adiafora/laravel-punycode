@@ -5,7 +5,7 @@ This package converts a Unicode encoded domain name to a IDNA ASCII form and vic
 
 This package is based on another package - fomvasss/laravel-punycode. But the idna_convert class is taken as the main class. It allows you to use a domain in any writing: only domain, domain with www, Protocol, script, parameters, and so on. If You need to decode an English domain into punycode, then nothing will happen to it, no errors and unexpected results. You can safely use this package on all domains, it will do everything for You.
 
-###Install
+### Install
 Run:
 ```php
 composer require "adiafora/laravel-punycode"
@@ -15,7 +15,7 @@ For Laravel < 5.5 Add in ServiceProvider to the providers array in config/app.ph
   Adiafora\Punycode\PunycodeServiceProvider::class,
 ```
 
-###Usage
+### Usage
 Usage facade
 You can now using the Facade.
 
@@ -28,10 +28,12 @@ var_dump(Punycode::encode('мой-веб-сайт.сайт'));
 var_dump(Punycode::decode('xn-----8kcceszgtu3bo.xn--80aswg'));
 // outputs: мой-веб-сайт.сайт
 ```
-#Usage helper functions
+Usage helper functions
+
 ```php
 punycode_encode('мой-веб-сайт.сайт');
 punycode_decode('xn-----8kcceszgtu3bo.xn--80aswg');
 ```
-###License
+
+### License
 Faker is released under the MIT Licence. See the bundled LICENSE file for details.
