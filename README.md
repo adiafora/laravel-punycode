@@ -7,7 +7,9 @@ This package is based on another package - fomvasss/laravel-punycode. But the id
 
 If You accidentally encoded an English domain in punycode, then nothing will happen to it, no errors and unexpected results. You can safely use this package on all domains, it will do everything for You.
 
-### Install
+Install
+-----------------------------------
+
 Run:
 ```php
     composer require "adiafora/laravel-punycode"
@@ -17,8 +19,10 @@ For Laravel < 5.5 Add in ServiceProvider to the providers array in config/app.ph
     Adiafora\Punycode\PunycodeServiceProvider::class,
 ```
 
-### Usage
-Usage facade
+Usage
+-----------------------------------
+
+### Usage facade
 You can now using the Facade by default.
 
 For Laravel < 5.5 Add in Facade to the aliases array in config/app.php
@@ -35,12 +39,14 @@ Example usage:
     var_dump(Punycode::decode('xn-----8kcceszgtu3bo.xn--80aswg'));
     // outputs: мой-веб-сайт.сайт
 ```
-Usage helper functions
+### Usage helper functions
 
 ```php
     punycode_encode('мой-веб-сайт.сайт');
     punycode_decode('xn-----8kcceszgtu3bo.xn--80aswg');
 ```
 
-### License
+License
+-----------------------------------
+
 Faker is released under the MIT Licence. See the bundled LICENSE file for details.
