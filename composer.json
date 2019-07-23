@@ -17,7 +17,9 @@
 	"version": "1.2",
 	"autoload": {
 		"classmap": [],
-		"files": [],
+		"files": [
+          "src/helpers.php"
+        ],
 		"psr-4": {
 			"Adiafora\\Punycode\\": "src"
 		}

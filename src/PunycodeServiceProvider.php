@@ -13,7 +13,7 @@ class PunycodeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerHelpers();
+//        $this->registerHelpers();
     }
 
     /**
