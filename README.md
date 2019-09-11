@@ -49,4 +49,4 @@ Example usage:
 License
 -----------------------------------
 
-Faker is released under the MIT Licence. See the bundled LICENSE file for details.
+The MIT License (MIT). Please see License File for more information.
